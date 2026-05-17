@@ -12,27 +12,6 @@ This workflow converts raw human gene annotation data into **strand-aware promot
 
 The final output is a clean BED file containing biologically correct promoter intervals.
 
----
-
-## Pipeline Overview
-
-```text
-human_gene_annotation.tsv.gz
-        │
-        ▼
- [Parse TSS coordinates]
-        │
-        ▼
- [Filter valid chromosomes]
-        │
-        ▼
- [Generate 500 bp upstream promoters]
-        │
-        ▼
- promoters_500bp.bed   ✓
-```
-
----
 
 # Quick Start
 
